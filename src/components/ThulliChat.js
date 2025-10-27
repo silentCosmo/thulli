@@ -1,6 +1,7 @@
 "use client";
 
 import { Pause, Play, Volume2, VolumeX } from "lucide-react";
+import Script from "next/script";
 import { useState, useEffect, useRef } from "react";
 
 export default function ThulliChat() {
@@ -284,7 +285,11 @@ export default function ThulliChat() {
         </button>
       </form>
 
-      <script src="https://code.responsivevoice.org/responsivevoice.js?key=CZcJU4cs"></script>
+      <Script
+      src="https://code.responsivevoice.org/responsivevoice.js?key=CZcJU4cs"
+      strategy="afterInteractive"
+      />
+      
     </div>
   );
 }

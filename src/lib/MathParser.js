@@ -81,7 +81,6 @@ function handleDirectExpression(expr) {
   if (!/[\+\-\*\/]/.test(expr)) return null;
   try {
     expr = expr.replace(/[^0-9+\-*/().]/g, "");
-    // eslint-disable-next-line no-eval
     const result = eval(expr);
     if (isNaN(result)) return "Hmm, that doesn’t seem like a valid math expression.";
     return `Let’s see… that’s ${result}.`;
