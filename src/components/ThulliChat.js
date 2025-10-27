@@ -1,7 +1,6 @@
 "use client";
 
 import { Pause, Play, Volume2, VolumeX } from "lucide-react";
-import Script from "next/script";
 import { useState, useEffect, useRef } from "react";
 
 export default function ThulliChat() {
@@ -144,7 +143,7 @@ export default function ThulliChat() {
             alt="Thulli Logo"
             className="h-10 w-10 object-contain animate-pulse"
           />
-          <span className="bg-gradient-to-r from-[#8ECDF7] via-[#B29BF4] to-[#F188C0] text-transparent bg-clip-text font-semibold tracking-wide text-lg">
+          <span className="bg-gradient-to-r capitalize from-[#8ECDF7] via-[#B29BF4] to-[#F188C0] text-transparent bg-clip-text font-semibold tracking-wide text-md">
             THULLI INTERFACE
           </span>
         </div>
@@ -164,11 +163,11 @@ export default function ThulliChat() {
         >
           {autoSpeak ? (
             <>
-              <Volume2 size={16} className="animate-pulse" /> Auto Voice ON
+              <Volume2 size={16} className="animate-pulse" /> 
             </>
           ) : (
             <>
-              <VolumeX size={16} /> Auto Voice OFF
+              <VolumeX size={16} /> 
             </>
           )}
         </button>
@@ -285,10 +284,7 @@ export default function ThulliChat() {
         </button>
       </form>
 
-      <Script
-      src="https://code.responsivevoice.org/responsivevoice.js?key=CZcJU4cs"
-      strategy="afterInteractive"
-      />
+      {/* <script src="https://code.responsivevoice.org/responsivevoice.js?key=CZcJU4cs"></script> */}
       
     </div>
   );
