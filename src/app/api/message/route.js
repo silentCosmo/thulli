@@ -69,3 +69,8 @@
       return new Response(JSON.stringify({ error: err.message }), { status: 500, headers: { "Content-Type": "application/json" } });
     }
   }
+
+
+  export async function GET(req) {
+  return new Response(JSON.stringify({ message: "This is the Thulli API. Send a POST request with your data." }), { status: 200, headers: { "Content-Type": "application/json" } });
+}
