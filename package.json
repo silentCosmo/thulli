@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@xenova/transformers": "^2.2.0",
+    "@xenova/transformers": "^1.0.3",
     "compromise": "^14.14.4",
     "compute-cosine-similarity": "^1.1.0",
     "lucide-react": "^0.548.0",
